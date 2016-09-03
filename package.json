@@ -1,0 +1,14 @@
+{
+  "name": "rails-api-plus-riot-non-spa",
+  "version": "1.0.0",
+  "license": "ISC",
+  "private": true,
+  "dependencies": {
+    "babel-core": "^6.13.2",
+    "babel-preset-angular2": "^0.0.2",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-es2015-riot": "^1.1.0",
+    "lodash": "^4.15.0",
+    "riot": "^2.6.1"
+  }
+}
