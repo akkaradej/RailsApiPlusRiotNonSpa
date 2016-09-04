@@ -1,8 +1,6 @@
-import riot from 'riot/riot';
+import tagFactory from '../tagFactory';
 
-var tag;
-
-riot.tag('todo',`
+const tag = tagFactory('todo',`
 <h3>{ opts.title }</h3>
 
 <ul>
@@ -17,10 +15,8 @@ riot.tag('todo',`
   <input name="input" onkeyup="{ edit }">
   <button disabled="{ !text }">Add #{ items.length + 1 }</button>
 </form>
-`,
+`, 
 function(opts) {
-  tag = this;
-
   this.items = opts.items || [];
   this.text = '';
 
@@ -42,10 +38,4 @@ function(opts) {
   }
 });
 
-document.addEventListener('turbolinks:load', function(){
-  if (tag) {
-    tag.unmount();
-    tag = null;
-  }
-  riot.mount('todo', { title: 'Todo Title' });
-});
+export default tag;

@@ -1,3 +1,3 @@
 //= require turbolinks
 
-//= require_tree ./tags
+//= require ./tagManager
