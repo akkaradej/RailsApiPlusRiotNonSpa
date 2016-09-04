@@ -4,6 +4,6 @@ export class User {
   }
 
   say() {
-    return 'Hello, ' + this.name;
+    return 'Hi, ' + this.name;
   }
 }

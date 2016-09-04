@@ -16,6 +16,6 @@ Start
 
 Example
 
-* see \<timer> at /posts
+* see \<hello>, \<timer>, \<todo> at root
 
-* see \<todo> at /posts/new
+* see \<post-list> at /posts
